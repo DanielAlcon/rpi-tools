@@ -1,4 +1,5 @@
 #!/bin/bash
+# you need to sudo chmod 775 the file
 COUNTER=0
 for OUTPUT in $(seq 5)
 do
