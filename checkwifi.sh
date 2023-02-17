@@ -1,5 +1,5 @@
 #!/bin/bash
-# you need to sudo chmod 775 the file
+# you need to sudo chmod 775 the file and then in crontab */5 * * * * /usr/bin/sudo -H /path/to/your/checkwifi.sh >> /dev/null 2>&1
 COUNTER=0
 for OUTPUT in $(seq 5)
 do
