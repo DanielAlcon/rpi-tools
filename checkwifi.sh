@@ -5,7 +5,7 @@ for OUTPUT in $(seq 5)
 do
     let COUNTER++
     ping -c4 www.google.es > /dev/null
-    if [ $? != 0 && $COUNTER > 5] 
+    if [ $? != 0 && $COUNTER -gt 5] 
     then
         echo "No network connection, restarting wlan0"
         /sbin/ifdown 'wlan0'
